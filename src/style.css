@@ -1,0 +1,103 @@
+:root{
+    --main-green:#0CCA9A;
+    --second-green:#0aa981;
+}
+
+/* Title */
+.main-title{
+    font-size: 28px;
+    color: var(--main-green);
+}
+
+
+/* Button */
+.main-button{
+    width: 100%;
+    background-color: var(--main-green);
+    padding: 7px 24px;
+    border: transparent;
+    font-weight: 600;
+    transition: all 0.3 ease-in-out;
+}
+.main-button:hover{
+    background-color: var(--second-green) ;
+    border: transparent;
+}
+
+
+.form-control{
+    font-size: 15px !important;
+}
+.custom-control-label{
+    font-size: 15px;
+}
+.custom-control-label:before{
+    background-color:transparent;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+    background-color:var(--main-green);
+    border: solid var(--main-green);
+  }
+.social-media-facebook,
+.social-media-google{
+    width: 100%;
+    border: 1px solid #000;
+    padding: 7px 24px;
+    color: #FFF;
+    border: transparent;
+}
+.social-media-facebook{
+    background-color: #4E73DF;
+}
+.social-media-google{
+    background-color: #EA4335;
+}
+.social-media-faceboo:hover{
+    background-color: #3c65e1;
+}
+.social-media-google:hover{
+    background-color: #e63120;
+}
+/* login */
+.auth-sidebar{
+    background-color: var(--main-green);
+    position: relative;
+    opacity: 1;
+}
+.auth-sidebar::before{
+    content: "";
+    background-image: url(./images/shape.svg);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.auth-sidebar::after{
+    content: "";
+    background-color: var(--main-green);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.1;
+}
+.sidebar-content{
+    position: relative;
+    z-index: 3;
+}
+
+.login-form{
+    width: 100%;
+}
+
+
+@media (min-width:768px){
+    .login-form{
+        width: 75%;
+    }
+}
